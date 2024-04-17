@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content failed suite-Surefire_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="MealPlanTest" class="method navigator-link" hash-for-method="DeleteItemToMealPlanTest">DeleteItemToMealPlanTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="MealPlanTest" class="method navigator-link" hash-for-method="AddItemMealPlanTest">AddItemMealPlanTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="MealPlanTest" class="method navigator-link" hash-for-method="MealPlanGenerateTest">MealPlanGenerateTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -116,17 +121,22 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="MealPlanTest" class="method navigator-link" hash-for-method="AddItemMealPlanTest">AddItemMealPlanTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="RecipeTest" class="method navigator-link" hash-for-method="AnalyzeRecipesTest">AnalyzeRecipesTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="MealPlanTest" class="method navigator-link" hash-for-method="MealPlanGenerateTest">MealPlanGenerateTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="RecipeTest" class="method navigator-link" hash-for-method="SearchRecipesRandomTest">SearchRecipesRandomTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="RecipeTest" class="method navigator-link" hash-for-method="MealPlanSearchRecipesTest">MealPlanSearchRecipesTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="RecipeTest" class="method navigator-link" hash-for-method="SearchRecipesTest">SearchRecipesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="RecipeTest" class="method navigator-link" hash-for-method="guessNutritionTest">guessNutritionTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -149,14 +159,51 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="DeleteItemToMealPlanTest">
-                  </a> <!-- DeleteItemToMealPlanTest -->
-                  <span class="method-name">DeleteItemToMealPlanTest</span>
+                  <a name="AddItemMealPlanTest">
+                  </a> <!-- AddItemMealPlanTest -->
+                  <span class="method-name">AddItemMealPlanTest</span>
                   <div class="stack-trace">groovy.lang.GroovyRuntimeException: could not access constructor: private java.lang.AssertionError(java.lang.String) with arguments: [1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:238)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:157)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:157)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
+	at MealPlanTest.AddItemMealPlanTest(MealPlanTest.java:76)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Add item to mealplan)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MealPlanGenerateTest">
+                  </a> <!-- MealPlanGenerateTest -->
+                  <span class="method-name">MealPlanGenerateTest</span>
+                  <div class="stack-trace">groovy.lang.GroovyRuntimeException: could not access constructor: private java.lang.AssertionError(java.lang.String) with arguments: [1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
@@ -168,14 +215,14 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
-	at MealPlanTest.DeleteItemToMealPlanTest(MealPlanTest.java:90)
+	at MealPlanTest.MealPlanGenerateTest(MealPlanTest.java:25)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 ... Removed 14 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Delete item to mealplan)                  </em>
+(Generate MealPlan)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,37 +235,38 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="MealPlanSearchRecipesTest">
-                  </a> <!-- MealPlanSearchRecipesTest -->
-                  <span class="method-name">MealPlanSearchRecipesTest</span>
+                  <a name="AnalyzeRecipesTest">
+                  </a> <!-- AnalyzeRecipesTest -->
+                  <span class="method-name">AnalyzeRecipesTest</span>
                   <em>
-(Search Recipes MealPlan)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">MealPlanTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="AddItemMealPlanTest">
-                  </a> <!-- AddItemMealPlanTest -->
-                  <span class="method-name">AddItemMealPlanTest</span>
-                  <em>
-(Add item to mealplan)                  </em>
+(Analyze Recipes)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="MealPlanGenerateTest">
-                  </a> <!-- MealPlanGenerateTest -->
-                  <span class="method-name">MealPlanGenerateTest</span>
+                  <a name="SearchRecipesRandomTest">
+                  </a> <!-- SearchRecipesRandomTest -->
+                  <span class="method-name">SearchRecipesRandomTest</span>
                   <em>
-(Generate MealPlan)                  </em>
+(Search Recipes Random)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchRecipesTest">
+                  </a> <!-- SearchRecipesTest -->
+                  <span class="method-name">SearchRecipesTest</span>
+                  <em>
+(Search Recipes)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="guessNutritionTest">
+                  </a> <!-- guessNutritionTest -->
+                  <span class="method-name">guessNutritionTest</span>
+                  <em>
+(Guess Nutrition)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -276,28 +324,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'AddItemMealPlanTest')
 data.setCell(0, 2, 'MealPlanTest')
-data.setCell(0, 3, 2414);
+data.setCell(0, 3, 5938);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'MealPlanSearchRecipesTest')
+data.setCell(1, 1, 'guessNutritionTest')
 data.setCell(1, 2, 'RecipeTest')
-data.setCell(1, 3, 1041);
+data.setCell(1, 3, 1223);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'MealPlanGenerateTest')
-data.setCell(2, 2, 'MealPlanTest')
-data.setCell(2, 3, 951);
+data.setCell(2, 1, 'SearchRecipesRandomTest')
+data.setCell(2, 2, 'RecipeTest')
+data.setCell(2, 3, 1075);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'DeleteItemToMealPlanTest')
-data.setCell(3, 2, 'MealPlanTest')
-data.setCell(3, 3, 768);
+data.setCell(3, 1, 'AnalyzeRecipesTest')
+data.setCell(3, 2, 'RecipeTest')
+data.setCell(3, 3, 1016);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'MealPlanGenerateTest')
+data.setCell(4, 2, 'MealPlanTest')
+data.setCell(4, 3, 1002);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'SearchRecipesTest')
+data.setCell(5, 2, 'RecipeTest')
+data.setCell(5, 3, 645);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -342,45 +398,55 @@ return data;
               <div class="chronological-class-name">RecipeTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">SetUpSuite</span>
-                <span class="method-start">285 ms</span>
+                <span class="method-start">418 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">MealPlanTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">AddItemMealPlanTest</span>
-                <span class="method-start">297 ms</span>
+                <span class="method-start">440 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">DeleteItemToMealPlanTest</span>
-                <span class="method-start">2764 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">MealPlanGenerateTest</span>
-                <span class="method-start">3537 ms</span>
+                <span class="method-start">6518 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">RecipeTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">MealPlanSearchRecipesTest</span>
-                <span class="method-start">4489 ms</span>
+                <span class="method-name">AnalyzeRecipesTest</span>
+                <span class="method-start">7524 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SearchRecipesRandomTest</span>
+                <span class="method-start">8548 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SearchRecipesTest</span>
+                <span class="method-start">9624 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">guessNutritionTest</span>
+                <span class="method-start">10271 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">MealPlanTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">TearDownSuite</span>
-                <span class="method-start">5574 ms</span>
+                <span class="method-start">11552 ms</span>
               </div> <!-- configuration-suite after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">RecipeTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">TearDownSuite</span>
-                <span class="method-start">5577 ms</span>
+                <span class="method-start">11554 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

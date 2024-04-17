@@ -16,4 +16,5 @@ public interface ApplicationConfig extends Config{
 
     @Config.Key("server.host")
     String host();
+
 }

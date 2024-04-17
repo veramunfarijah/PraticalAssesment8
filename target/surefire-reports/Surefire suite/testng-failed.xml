@@ -5,9 +5,10 @@
     <classes>
       <class name="MealPlanTest">
         <methods>
+          <include name="AddItemMealPlanTest"/>
+          <include name="MealPlanGenerateTest"/>
           <include name="TearDownSuite"/>
           <include name="SetUpSuite"/>
-          <include name="DeleteItemToMealPlanTest"/>
         </methods>
       </class> <!-- MealPlanTest -->
     </classes>
